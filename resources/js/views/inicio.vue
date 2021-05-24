@@ -25,8 +25,8 @@
                         <tr v-for="item in listado" :id="item[0]">
                             <td>{{item[1]}}</td>
                             <td v-if="seleccion==1">{{item[2]}}</td>
-                            <td v-if="seleccion==0"><button class="fa-star" @click="setFavorito(item)">Favorito</button></td>
-                            <td v-else><button class="fa-star" @click="deleteFavorito(item[0])">Quitar</button></td>
+                            <td v-if="seleccion==0"><button class="btn btn-outline-primary" @click="setFavorito(item)">Favorito</button></td>
+                            <td v-else><button class="btn btn-outline-danger" @click="deleteFavorito(item[0])">Quitar</button></td>
                         </tr>
                     </tbody>
                 </table>

@@ -14,7 +14,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="">Password</label>
-                                <input type="text" name="" id="" v-model="form.password" class="form-control">
+                                <input type="password" name="" id="" v-model="form.password" class="form-control">
                             </div>
                             <div class="mb-3">
                                 <input type="submit" value="Ingresar" class="form-control btn-primary">

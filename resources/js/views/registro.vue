@@ -17,11 +17,11 @@
                         </div>
                         <div class="form-group mb-3">
                             <label for="">Password</label><br>
-                            <input type="text" name="" id="" v-model="form.password" class="form-control">
+                            <input type="password" name="" id="" v-model="form.password" class="form-control">
                         </div>
                         <div class="form-group mb-3">
                             <label for="">Confirmar Password</label><br>
-                            <input type="text" name="" id="" v-model="form.password_confirmation" class="form-control">
+                            <input type="password" name="" id="" v-model="form.password_confirmation" class="form-control">
                         </div>
                         <div>
                             <input type="submit" value="Terminar" class="form-control btn btn-primary">

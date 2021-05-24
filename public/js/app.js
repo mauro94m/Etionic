@@ -21187,7 +21187,7 @@ var render = function() {
                         _c(
                           "button",
                           {
-                            staticClass: "fa-star",
+                            staticClass: "btn btn-outline-primary",
                             on: {
                               click: function($event) {
                                 return _vm.setFavorito(item)
@@ -21201,7 +21201,7 @@ var render = function() {
                         _c(
                           "button",
                           {
-                            staticClass: "fa-star",
+                            staticClass: "btn btn-outline-danger",
                             on: {
                               click: function($event) {
                                 return _vm.deleteFavorito(item[0])
@@ -21312,7 +21312,7 @@ var render = function() {
                         }
                       ],
                       staticClass: "form-control",
-                      attrs: { type: "text", name: "", id: "" },
+                      attrs: { type: "password", name: "", id: "" },
                       domProps: { value: _vm.form.password },
                       on: {
                         input: function($event) {
@@ -21473,7 +21473,7 @@ var render = function() {
                       }
                     ],
                     staticClass: "form-control",
-                    attrs: { type: "text", name: "", id: "" },
+                    attrs: { type: "password", name: "", id: "" },
                     domProps: { value: _vm.form.password },
                     on: {
                       input: function($event) {
@@ -21502,7 +21502,7 @@ var render = function() {
                       }
                     ],
                     staticClass: "form-control",
-                    attrs: { type: "text", name: "", id: "" },
+                    attrs: { type: "password", name: "", id: "" },
                     domProps: { value: _vm.form.password_confirmation },
                     on: {
                       input: function($event) {
