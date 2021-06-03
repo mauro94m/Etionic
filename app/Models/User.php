@@ -21,6 +21,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'rol',
         'password',
     ];
 
@@ -44,6 +45,6 @@ class User extends Authenticatable
     ];
 
     public function favoritos(){
-        return $this->hasMany(Favorito::class, 'user_id', 'id');
+        return $this->hasMany(Favorito::class);
     }
 }

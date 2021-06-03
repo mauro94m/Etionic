@@ -31,6 +31,22 @@
                     </tbody>
                 </table>
             </div>
+            <div class="container">
+                <div class="card">
+                    <table>
+                        <thead>
+                            <th>ID</th>
+                            <th>Titulo</th>
+                            <th>Link</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </template>

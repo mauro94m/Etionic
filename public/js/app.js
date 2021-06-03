@@ -1949,6 +1949,22 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -2275,6 +2291,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -2283,6 +2303,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       form: {
         name: '',
         email: '',
+        rol: '',
         password: '',
         password_confirmation: ''
       }
@@ -21216,13 +21237,36 @@ var render = function() {
               0
             )
           ])
-        ])
+        ]),
+        _vm._v(" "),
+        _vm._m(0)
       ])
     ],
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "card" }, [
+        _c("table", [
+          _c("thead", [
+            _c("th", [_vm._v("ID")]),
+            _vm._v(" "),
+            _c("th", [_vm._v("Titulo")]),
+            _vm._v(" "),
+            _c("th", [_vm._v("Link")])
+          ]),
+          _vm._v(" "),
+          _c("tbody", [_c("tr")])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -21454,6 +21498,33 @@ var render = function() {
                           return
                         }
                         _vm.$set(_vm.form, "email", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group mb-3" }, [
+                  _c("label", { attrs: { for: "" } }, [_vm._v("Rol")]),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.rol,
+                        expression: "form.rol"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "text", name: "", id: "" },
+                    domProps: { value: _vm.form.rol },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "rol", $event.target.value)
                       }
                     }
                   })

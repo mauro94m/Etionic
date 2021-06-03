@@ -16,6 +16,10 @@
                             <input type="text" name="" id="" v-model="form.email" class="form-control">
                         </div>
                         <div class="form-group mb-3">
+                            <label for="">Rol</label><br>
+                            <input type="text" name="" id="" v-model="form.rol" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
                             <label for="">Password</label><br>
                             <input type="password" name="" id="" v-model="form.password" class="form-control">
                         </div>
@@ -41,6 +45,7 @@ export default {
             form:{
                 name:'',
                 email:'',
+                rol:'',
                 password:'',
                 password_confirmation:''
             }
