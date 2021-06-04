@@ -26,4 +26,5 @@ Route::group(['middleware' => ['auth:sanctum']], function(){
     Route::get('/favorito', [App\Http\Controllers\FavoritoController::class, 'index']);
     Route::post('/favorito', [App\Http\Controllers\FavoritoController::class, 'store']);
     Route::delete('/favorito/{favorito}', [App\Http\Controllers\FavoritoController::class, 'destroy']);
+    Route::get('/unreadnotifications', [App\Http\Controllers\FavoritoController::class, 'unreadnotifications']);
 });

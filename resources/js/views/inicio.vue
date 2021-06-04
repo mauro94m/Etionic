@@ -2,6 +2,7 @@
     <div>
         <Header>
             <li>
+                <NotificationComponent></NotificationComponent>
                 <button @click="getLogout" class="btn btn-dark">Logout</button>
             </li>
         </Header>
@@ -117,7 +118,6 @@ export default {
                         }}
                     )
                     .then(function(response){
-                        console.log(response)
                         vm.listado = []
                         response.data.forEach(item => {
                             vm.listado.push([item.id, item.titulo, item.link])

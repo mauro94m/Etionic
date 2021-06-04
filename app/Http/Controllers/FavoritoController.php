@@ -27,15 +27,19 @@ class FavoritoController extends Controller
             'user_id' => Auth::user()->id,
         ]);
         
-        /*User::all()->except($favorito->user_id)
+        User::all()->except($favorito->user_id)
                     ->each(function(User $user) use ($favorito){
                         $user->notify(new NewFavorito($favorito));
-                    });*/
-        event(new FavoritoEvent($favorito));
+                    });
     }
 
     public function destroy(Favorito $favorito){
         $this->authorize('delete', $favorito);
         $favorito->delete();
+    }
+
+    public function unreadnotifications(){
+        $resultado = Auth::User()->unreadNotifications;
+        return response()->json($resultado);
     }
 }
